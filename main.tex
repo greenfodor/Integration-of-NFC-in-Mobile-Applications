@@ -1,0 +1,70 @@
+%\documentclass[12pt]{scrreprt}
+\documentclass[12pt]{report} 
+
+% language may be romanian or english (default is english)
+% type may be bachelor or master (default is bachelor)
+\usepackage[language=eng, type=bachelor]{style}
+
+%\geometry{a4paper,top=2.5cm,left=3cm,right=2.5cm,bottom=2.5cm}
+%in style
+%controlling the appearance of your headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\renewcommand{\headrulewidth}{0.2pt}
+\renewcommand{\footrulewidth}{0.2pt}
+
+\begin{document}
+
+\specialization{COMPUTER SCIENCE}	
+\title{Integrating NFC data retrieval in Android mobile applications}					   
+\author{Fodor George-David}											
+\supervisor{Phd. Student Țirban Ionuț-Paul\newline
+Phd. Coroiu Adriana Mihaela}				
+				
+\maketitle
+
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+\pagenumbering{roman} 
+
+\cleardoublepage
+ABSTRACT
+\vspace{0.5cm}	
+\hrule
+\vspace{0.5cm}	
+%\cleardoublepage
+
+The main purpose of our paper, "Integrating NFC data retrieval in Android mobile applications", is to give an example of how the NFC could be used in different domains in order to retrieve information while providing a new layer of privacy for the users. A second goal is to serve a solution for the medical system that can be easily implemented in order to get rid of the paper medical reports and take full advantage of the Electronic Medical Record (EMR) systems.
+
+The first part of our paper, chapter two, presents the current situation and the solution we are proposing.
+
+Part two, chapters three and four, talk about the architecture and system requirements for the application we are aiming to develop in order reach the goal stated in the last section of chapter two.
+
+The final part, chapters five and six, present our results and the improvements we consider that should be mentioned.
+
+\tableofcontents
+
+
+\newpage
+\pagenumbering{arabic}
+
+\input{chapters/chapter1_introduction}
+%\addcontentsline{toc}{chapter}{Introduction}
+
+\input{chapters/chapter2}
+\input{chapters/chapter3}
+\input{chapters/chapter4}
+\input{chapters/chapter5}
+\input{chapters/chapter6}
+
+\input{chapters/chapter7_conclusions}
+%\addcontentsline{toc}{chapter}{Conclusions}
+
+\bibliography{references}
+
+\end{document}
